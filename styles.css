@@ -1,0 +1,18 @@
+
+
+.flex {
+    background-color:grey;
+    width: 100vh;
+    height: 100vh;
+}
+
+.weekly-buttons {
+    display: flex;
+}
+
+.weekly-buttons div {
+    background-color: black;
+    width: 5vh;
+    height: 5vh;
+    margin: 1px
+}
