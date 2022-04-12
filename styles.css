@@ -1,92 +1,156 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, rgba(255, 167, 35, .9), rgba(255, 97, 35, .3))
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 167, 35, 0.9),
+    rgba(255, 97, 35, 0.3)
+  );
 }
 
 #container {
-    background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif');
-    background-size: 18em;
-
+  background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
+  background-size: 18em;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
-   /* background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif'); */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    /* background-color:grey; */
-    width: 100vh;
-    height: 100vh;
+  /* background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif'); */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* background-color:grey; */
+  width: 100vh;
+  height: 100vh;
 }
 
 .location p {
-    color: white;
-    text-align: center;
-    font-size: 2em;
-
+  color: white;
+  text-align: center;
+  font-size: 2em;
 }
 
-.icon p{
-    color: white;
-    text-align: center;
-
+.icon p {
+  color: white;
+  text-align: center;
 }
 
 .description p {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
-
 .tempature p {
-    text-align: center;
-    font-size: 6em;
-    color: white;
+  text-align: center;
+  font-size: 6em;
+  color: white;
 }
 
 .weekly-buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .weekly-buttons div {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    opacity:.5;
-    width: 5vh;
-    height: 5vh;
-    margin: 1px
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 0.5;
+  width: 5vh;
+  height: 5vh;
+  margin: 1px;
 }
 
-.weekly-buttons div p{
-    font-size: 10px;
-    padding-left: 2em;
+.weekly-buttons div p {
+  font-size: 10px;
+  padding-left: 2em;
 }
 
-.weekly-buttons div:hover{
-    opacity: 1.0;
+.weekly-buttons div:hover {
+  opacity: 1;
 }
+
+/* MORE CSS -  BEGINNING OF TOGGLE  */
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 52px;
+  background-color: red;
+  border-radius: 30px;
+  border: 2px solid gray;
+  /* height: 25px;
+  width: 25px; */
+}
+
+.btnToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  align-content: center;
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+/* Toggle text */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+  left: 49px;
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: green;
+}
+
+/* .toggle::after {
+  height: 25px;
+  width: 25px;
+  size-adjust: 10px;
+} */
+/* Checkbox vanished */
+.checkbox {
+  display: none;
+}
+
+/* END OF TOGGLE  */
 
 @media screen and (max-device-width: 640px) {
-   
-    #container {
-        background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif');
-        background-size: 15em;
-    }
-
-
-    }
+  #container {
+    background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
+    background-size: 15em;
+  }
+}
