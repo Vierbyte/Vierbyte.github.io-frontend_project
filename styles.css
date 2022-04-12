@@ -9,6 +9,8 @@ body {
 }
 
 #container {
+    background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif');
+    background-size: 18em;
 
 }
 
@@ -20,12 +22,38 @@ body {
 }
 
 .flex {
+   /* background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif'); */
     align-items: center;
     justify-content: center;
     display: flex;
     /* background-color:grey; */
     width: 100vh;
     height: 100vh;
+}
+
+.location p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.icon p{
+    color: white;
+    text-align: center;
+
+}
+
+.description p {
+    color: white;
+    text-align: center;
+}
+
+
+.tempature p {
+    text-align: center;
+    font-size: 6em;
+    color: white;
 }
 
 .weekly-buttons {
@@ -37,8 +65,28 @@ body {
 .weekly-buttons div {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
+    opacity:.5;
     width: 5vh;
     height: 5vh;
     margin: 1px
 }
+
+.weekly-buttons div p{
+    font-size: 10px;
+    padding-left: 2em;
+}
+
+.weekly-buttons div:hover{
+    opacity: 1.0;
+}
+
+@media screen and (max-device-width: 640px) {
+   
+    #container {
+        background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif');
+        background-size: 15em;
+    }
+
+
+    }
