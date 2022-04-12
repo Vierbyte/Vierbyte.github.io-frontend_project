@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typhoon</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKdSnMuqaUYg3BE0ATdRFjxhJ8W7oHmtw&libraries=places&callback=initMap" async defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKdSnMuqaUYg3BE0ATdRFjxhJ8W7oHmtw&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
     <script defer src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="flex">
-        <div id="container">
-            <div class="header">
-                <img src="./weather/64x64/day/113.png">
-            </div>
-            <div class="location">
-                <p class="location-header">location</p>
-            </div>
-
-
-            <div class="icon">
-                    <p>icon</p>
-            </div>
-
-            <div class="description">
-                    <p>description</p>
-            </div>
-
-            <div class="tempature">
-                    <p>70</p>
-            </div>
-
-            <div>
-                <p>weekly-buttons</p>
-                <div class="weekly-buttons">
-                    <div>
-                        <p>M</p>
-                    </div>
-                    <div>
-                        <p>T</p>
-                    </div>
-                    <div>
-                        <p>W</p>
-                    </div>
-                    <div>
-                        <p>T</p>
-                    </div>
-                    <div>
-                        <p>F</p>
-                    </div>
-                
-                </div>
-            </div>
-
-            <div class="detailed-info">
-                <p>detailed-info</p>
-            </div>
-
-            <div class="citySearch">
-                <form>
-                    <input id="citySearchBox" type="text" placeholder="Enter City Name" data-citySearch>
-                    <button id="search" type="submit">Search</button>
-                </form>
-            </div>
+      <div id="container">
+        <div class="header">
+          <img src="./weather/64x64/day/113.png" />
+        </div>
+        <div class="location">
+          <p class="location-header">location</p>
         </div>
 
+        <div class="icon">
+          <p>icon</p>
+        </div>
+
+        <div class="description">
+          <p>description</p>
+        </div>
+
+        <div class="tempature">
+          <p>70</p>
+          <div class="btnToggle">
+            <input type="checkbox" id="switch" class="checkbox" size="1" />
+            <label for="switch" class="toggle">
+              <div class="fc">
+                <p style="font-size: 15px">F C</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <p>weekly-buttons</p>
+          <div class="weekly-buttons">
+            <div>
+              <p>M</p>
+            </div>
+            <div>
+              <p>T</p>
+            </div>
+            <div>
+              <p>W</p>
+            </div>
+            <div>
+              <p>T</p>
+            </div>
+            <div>
+              <p>F</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="detailed-info">
+          <p>detailed-info</p>
+        </div>
+
+        <div class="citySearch">
+          <form>
+            <input
+              id="citySearchBox"
+              type="text"
+              placeholder="Enter City Name"
+              data-citySearch
+            />
+            <button id="search" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </div>
-
-
-</body>
+  </body>
 </html>
