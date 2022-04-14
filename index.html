@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typhoon</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKdSnMuqaUYg3BE0ATdRFjxhJ8W7oHmtw&libraries=places&callback=initMap"
-      async
-      defer
-    ></script>
-    <script defer src="script.js"></script>
-  </head>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Typhoon</title>
+<link rel="stylesheet" href="styles.css"/>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKdSnMuqaUYg3BE0ATdRFjxhJ8W7oHmtw&libraries=places"
+async
+defer
+></script>
+<script defer type="module" src="script.js"></script>
+<script defer type="module" src="sensitive.js"></script>
+</head>
 
-  <body>
+<body>
     <div class="flex">
-      <div id="container">
-        <div class="header">
-          <img src="./weather/64x64/day/113.png" />
-        </div>
-        <div class="location">
-          <p class="location-header">location</p>
-        </div>
-
-        <div class="icon">
-          <p>icon</p>
-        </div>
-
-        <div class="description">
-          <p>description</p>
-        </div>
-
-        <div class="tempature">
-          <p>70</p>
-          <div class="btnToggle">
-            <input type="checkbox" id="switch" class="checkbox" size="1" />
-            <label for="switch" class="toggle">
-              <div class="fc">
-                <p style="font-size: 15px">F C</p>
-              </div>
-            </label>
-          </div>
-        </div>
-
-        <div>
-          <p>weekly-buttons</p>
-          <div class="weekly-buttons">
-            <div>
-              <p>M</p>
+        <div id="container">
+            <div class="header">
+                <!-- <img src="./weather/64x64/day/113.png"/> -->
             </div>
-            <div>
-              <p>T</p>
+            <div class="info">
+                <p id="locationHeader"></p>
             </div>
-            <div>
-              <p>W</p>
-            </div>
-            <div>
-              <p>T</p>
-            </div>
-            <div>
-              <p>F</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="detailed-info">
-          <p>detailed-info</p>
-        </div>
+            <div class="info">
+                <img id="dynamicIcon" src="">
+            </div>
 
-        <div class="citySearch">
-          <form>
-            <input
-              id="citySearchBox"
-              type="text"
-              placeholder="Enter City Name"
-              data-citySearch
-            />
-            <button id="search" type="submit">Search</button>
-          </form>
+            <div class="info">
+                <p id="description"></p>
+            </div>
+
+            <div class="info">
+                <p id="temp"></p>
+            </div>
+            <div class="btnToggle">
+                <input type="checkbox" id="switch" class="checkbox" size="1" />
+                <label for="switch" class="toggle">
+                    <div class="fc">
+                        <p style="font-size: 15px">F C</p>
+                    </div>
+                </label>
+            </div>
+    
+            <div>
+            <p></p>
+            <div class="weekly-buttons">
+                <div class="dow">
+                    <img id="iconM" src="">
+                    <p id="mon" class="wd">M</p>
+                </div>
+                <div class="dow">
+                    <img id="iconT" src="">
+                    <p id="tue" class="wd">T</p>
+                </div>
+                <div class="dow">
+                    <img id="iconW" src="">
+                    <p id="wed" class="wd">W</p>
+                </div>
+                <div class="dow">
+                    <img id="iconTh" src="">
+                    <p id="thu" class="wd">T</p>
+                </div>
+                <div class="dow">
+                    <img id="iconF" src="">
+                    <p id="fri" class="wd">F</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="detailed-info">
+            <p></p>
+            </div>
+
+            <div class="citySearch">
+            <form>
+                <input
+                id="citySearchBox"
+                type="text"
+                placeholder="Enter City Name"
+                data-citySearch
+                />
+                <!-- <button id="search" type="submit">Search</button> -->
+            </form>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
 <!-- notes -->
