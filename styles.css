@@ -1,182 +1,182 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 167, 35, 0.9),
-    rgba(255, 97, 35, 0.3)
-  );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 167, 35, 0.9),
+        rgba(255, 97, 35, 0.3)
+    );
 }
 
 #citySearchBox {
-  width: 70vw;
-  background: linear-gradient(to right, rgba(83, 158, 156), rgba(134, 88, 151));
-  text-align: center;
+    width: 70vw;
+    background: linear-gradient(to right, rgba(83, 158, 156), rgba(134, 88, 151));
+    text-align: center;
 }
 
 ::placeholder {
-  color: black;
+    color: black;
 }
 
 #container {
-  background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 100vh;
-  height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vh;
+    height: 100vh;
 }
 
 #dynamicIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .info p {
-  color: white;
-  text-align: center;
-  font-size: 2em;
-  background: linear-gradient(
-    to right,
-    rgba(83, 158, 156),
-    rgba(134, 88, 151, 9)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(
+        to right,
+        rgba(83, 158, 156),
+        rgba(134, 88, 151, 9)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #temp {
-  background: linear-gradient(to right, rgba(83, 158, 156), rgba(134, 88, 151));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(83, 158, 156), rgba(134, 88, 151));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .weekly-buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .weekly-buttons div {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  opacity: 0.5;
-  width: 5vh;
-  height: 5vh;
-  margin: 1px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 0.5;
+    width: 5vh;
+    height: 5vh;
+    margin: 1px;
 }
 
 .weekly-buttons div p {
-  font-size: 10px;
-  padding-left: 2em;
+    font-size: 10px;
+    padding-left: 2em;
 }
 
 .weekly-buttons div:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .dow {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .wd {
-  text-align: center;
-  font-size: 100px;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    to right,
-    rgba(83, 158, 156),
-    rgba(134, 88, 151, 9)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to right,
+        rgba(83, 158, 156),
+        rgba(134, 88, 151, 9)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* MORE CSS -  BEGINNING OF TOGGLE  */
 
 .toggle {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 52px;
-  background-color: red;
-  border-radius: 30px;
-  border: 2px solid gray;
-  /* height: 25px;
-    width: 25px; */
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 52px;
+    background-color: red;
+    border-radius: 30px;
+    border: 2px solid gray;
+    /* height: 25px;
+        width: 25px; */
 }
 
 .btnToggle {
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fc {
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  align-content: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-content: center;
 }
 
 /* After slide changes */
 
 .toggle:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: gray;
-  top: 1px;
-  left: 1px;
-  transition: all 0.5s;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 1px;
+    left: 1px;
+    transition: all 0.5s;
 }
 
 /* Toggle text */
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /* Checkbox checked effect */
 
 .checkbox:checked + .toggle::after {
-  left: 49px;
+    left: 49px;
 }
 
 /* Checkbox checked toggle label bg color */
 
 .checkbox:checked + .toggle {
-  background-color: green;
+    background-color: green;
 }
 
 /* .toggle::after {
@@ -188,7 +188,7 @@ p {
 /* Checkbox vanished */
 
 .checkbox {
-  display: none;
+    display: none;
 }
 
 /* END OF TOGGLE  */
@@ -206,243 +206,239 @@ p {
     }
 } */
 @media screen and (min-device-width: 640px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://cdn.dribbble.com/users/772985/screenshots/8502919/media/61640071cb5ad714d45e4155313584b8.gif");
-    background-size: 73em;
-    background-position: 2em 0em;
-  }
-  #container {
-    background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
-    background-size: 40em;
-    background-position: -9em -18.2em;
-    height: 73vh;
-    width: 60vh;
-    border-radius: 25px 25px 25px 25px;
-    margin-left: 35em;
-  }
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .flex {
-    /* background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif'); */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    /* background-color:grey; */
-    width: 100vh;
-    height: 100vh;
-  }
-  .location p {
-    color: white;
-    text-align: center;
-    font-size: 2em;
-  }
-  .icon1 p {
-    color: rgb(231, 180, 13);
-    text-align: center;
-  }
-  .description p {
-    color: white;
-    text-align: center;
-  }
-  .tempature {
-    margin-top: -5em;
-  }
-  .tempature p {
-    text-align: center;
-    font-size: 6em;
-    color: white;
-  }
-  .weekly-buttons {
-    display: flex;
-    align-items: center;
-    padding-left: 1em;
-    padding-top: 2em;
-    width: 90%;
-  }
-  .weekly-buttons div {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    opacity: 0.5;
-    width: 10vh;
-    height: 10vh;
-    margin: 5px;
-    border-radius: 20px;
-  }
-  .weekly-buttons div p {
-    font-size: 10px;
-    padding-left: 1.5em;
-    color: grey;
-  }
-  .weekly-initial {
-  }
-  .weekly-buttons div:hover {
-    opacity: 1;
-  }
-
-  #citySearchBox {
-    width: 70%;
-    background: linear-gradient(
-      to right,
-      rgba(83, 158, 156),
-      rgba(134, 88, 151)
-    );
-
-    text-align: center;
-  }
-  /* MORE CSS -  BEGINNING OF TOGGLE  */
-  .toggle {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 52px;
-    background-color: red;
-    border-radius: 30px;
-    border: 2px solid gray;
-    /* height: 25px;
-    width: 25px; */
-  }
-  .btnToggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -6em;
-  }
-  .fc {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    align-content: center;
-  }
-  /* After slide changes */
-  .toggle:after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: gray;
-    top: 1px;
-    left: 1px;
-    transition: all 0.5s;
-  }
-  /* Toggle text */
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-  /* Checkbox checked effect */
-  .checkbox:checked + .toggle::after {
-    left: 49px;
-  }
-  /* Checkbox checked toggle label bg color */
-  .checkbox:checked + .toggle {
-    background-color: green;
-  }
-  /* .toggle::after {
-    height: 25px;
-    width: 25px;
-    size-adjust: 10px;
-  } */
-  /* Checkbox vanished */
-  .checkbox {
-    display: none;
-  }
-  /* END OF TOGGLE  */
-  /* BEGENNING OF ANIMATED CSS CLOUDS  */
-  html {
-    box-sizing: border-box;
-  }
-  html *,
-  html *:before,
-  html *:after {
-    box-sizing: inherit;
-  }
-  body {
-    max-width: 42em;
-    padding: 2em;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-  }
-  .icon {
-    position: relative;
-    display: inline-block;
-    width: 12em;
-    height: 10em;
-    font-size: 0.5em; /* control icon size here */
-  }
-  .sun {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2.5em;
-    height: 2.5em;
-    margin: -1.25em;
-    background: currentColor;
-    border-radius: 50%;
-    box-shadow: 0 0 0 0.375em rgb(231, 217, 17);
-    animation: spin 12s infinite linear;
-  }
-  .rays {
-    position: absolute;
-    top: -2em;
-    left: 50%;
-    display: block;
-    width: 0.375em;
-    height: 1.125em;
-    margin-left: -0.1875em;
-    background: rgb(246, 222, 2);
-    border-radius: 0.25em;
-    box-shadow: 0 5.375em rgb(235, 219, 5);
-  }
-  .rays:before,
-  .rays:after {
-    content: "";
-    position: absolute;
-    top: 0em;
-    left: 0em;
-    display: block;
-    width: 0.375em;
-    height: 1.125em;
-    transform: rotate(60deg);
-    transform-origin: 50% 3.25em;
-    background: rgb(231, 209, 7);
-    border-radius: 0.25em;
-    box-shadow: 0 5.375em rgb(231, 209, 7);
-  }
-  .rays:before {
-    transform: rotate(120deg);
-  }
-  .cloud + .sun {
-    margin: -2em 1em;
-  }
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url("https://cdn.dribbble.com/users/772985/screenshots/8502919/media/61640071cb5ad714d45e4155313584b8.gif");
+        background-size: 73em;
+        background-position: 2em 0em;
     }
-  }
-  /* END OF CLOUD ANIMATION CSS */
-  .detailed-info {
-    padding-top: 4em;
-    padding-right: 1em;
-  }
-  /* @media screen and (max-device-width: 640px) {
     #container {
-      background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
-      background-size: 33em;
-      width: 100%;
-      height: 100%;
+        background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
+        background-size: 40em;
+        background-position: -9em -18.2em;
+        height: 73vh;
+        width: 60vh;
+        border-radius: 25px 25px 25px 25px;
+        margin-left: 35em;
     }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex {
+        /* background-image:url('https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif'); */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        /* background-color:grey; */
+        width: 100vh;
+        height: 100vh;
+    }
+    .location p {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+    .icon1 p {
+        color: rgb(231, 180, 13);
+        text-align: center;
+    }
+    .description p {
+        color: white;
+        text-align: center;
+    }
+    .tempature {
+    margin-top: -5em;
+    }
+    .tempature p {
+        text-align: center;
+        font-size: 6em;
+        color: white;
+    }
+    .weekly-buttons {
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        padding-top: 2em;
+        width: 90%;
+    }
+    .weekly-buttons div {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        opacity: 0.5;
+        width: 10vh;
+        height: 10vh;
+        margin: 5px;
+        border-radius: 20px;
+    }
+    .weekly-buttons div p {
+        font-size: 10px;
+        padding-left: 1.5em;
+        color: grey;
+    }
+    .weekly-buttons div:hover {
+    opacity: 1;
+    }
+    #citySearchBox {
+        width: 70%;
+        background: linear-gradient(
+            to right,
+            rgba(83, 158, 156),
+            rgba(134, 88, 151)
+        );
+        text-align: center;
+    }
+  /* MORE CSS -  BEGINNING OF TOGGLE  */
+    .toggle {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 52px;
+        background-color: red;
+        border-radius: 30px;
+        border: 2px solid gray;
+        /* height: 25px;
+        width: 25px; */
+}
+    .btnToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -6em;
+    }
+    .fc {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        align-content: center;
+    }
+  /* After slide changes */
+    .toggle:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 1px;
+        left: 1px;
+        transition: all 0.5s;
+    }
+  /* Toggle text */
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    /* Checkbox checked effect */
+    .checkbox:checked + .toggle::after {
+        left: 49px;
+    }
+    /* Checkbox checked toggle label bg color */
+    .checkbox:checked + .toggle {
+        background-color: green;
+    }
+    /* .toggle::after {
+        height: 25px;
+        width: 25px;
+        size-adjust: 10px;
+    } */
+    /* Checkbox vanished */
+    .checkbox {
+        display: none;
+    }
+    /* END OF TOGGLE  */
+    /* BEGENNING OF ANIMATED CSS CLOUDS  */
+    html {
+        box-sizing: border-box;
+    }
+    html *,
+    html *:before,
+    html *:after {
+        box-sizing: inherit;
+    }
+    body {
+        max-width: 42em;
+        padding: 2em;
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        width: 12em;
+        height: 10em;
+        font-size: 0.5em; /* control icon size here */
+    }
+    .sun {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2.5em;
+        height: 2.5em;
+        margin: -1.25em;
+        background: currentColor;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.375em rgb(231, 217, 17);
+        animation: spin 12s infinite linear;
+    }
+    .rays {
+        position: absolute;
+        top: -2em;
+        left: 50%;
+        display: block;
+        width: 0.375em;
+        height: 1.125em;
+        margin-left: -0.1875em;
+        background: rgb(246, 222, 2);
+        border-radius: 0.25em;
+        box-shadow: 0 5.375em rgb(235, 219, 5);
+    }
+    .rays:before,
+    .rays:after {
+        content: "";
+        position: absolute;
+        top: 0em;
+        left: 0em;
+        display: block;
+        width: 0.375em;
+        height: 1.125em;
+        transform: rotate(60deg);
+        transform-origin: 50% 3.25em;
+        background: rgb(231, 209, 7);
+        border-radius: 0.25em;
+        box-shadow: 0 5.375em rgb(231, 209, 7);
+    }
+    .rays:before {
+        transform: rotate(120deg);
+    }
+    .cloud + .sun {
+        margin: -2em 1em;
+    }
+    @keyframes spin {
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+    /* END OF CLOUD ANIMATION CSS */
+    .detailed-info {
+        padding-top: 4em;
+        padding-right: 1em;
+    }
+    /* @media screen and (max-device-width: 640px) {
+        #container {
+        background-image: url("https://i.pinimg.com/originals/a9/37/d4/a937d47b0d3d47df7a4faf34f3ee61f3.gif");
+        background-size: 33em;
+        width: 100%;
+        height: 100%;
+        }
   } */
   /* notes */
 }
